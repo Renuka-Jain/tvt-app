@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "tvt-app",
-    "slug": "tvt-app",
+    "name": "native",
+    "slug": "native",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/output-onlinepngtools.png",
-      "width": "50%",
-      "backgroundColor": "#6082B6"
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
