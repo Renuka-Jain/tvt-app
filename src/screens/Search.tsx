@@ -1,10 +1,10 @@
 import Recat from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const HomeScreen = () => {
+const SearchScreen = () => {
     return (
         <View style={styles.container}>
-          <Text>Home screen!</Text>
+          <Text>Search screen!</Text>
         </View>
     );
 }
@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default HomeScreen
+export default SearchScreen
