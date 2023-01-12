@@ -2,9 +2,9 @@ import React from "react";
 import { Text, View, TouchableOpacity, StyleSheet, Animated } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
-import Colors from "../constants/COLORS"
+import Colors from "../constants/colors"
 
-
+//also knon as bottomTabNavigator HomeNavigator
 const TabBar = ({ state, navigation }: BottomTabBarProps) => {
     return (
         <View style={styles.tabBar}>

@@ -1,10 +1,11 @@
 import Recat from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Button } from 'react-native'
 
-const SettingsScreen = () => {
+const Settings = () => {
     return (
         <View style={styles.container}>
           <Text>Settings screen!</Text>
+          <Button title="Switch to Dark Mode" onPress={() => null} />
         </View>
     );
 }
@@ -17,4 +18,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default SettingsScreen
+export default Settings

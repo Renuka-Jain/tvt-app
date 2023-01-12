@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import React from 'react'
+import Recat from 'react'
+import { View, Text, StyleSheet } from 'react-native'
 
-export default function Splash() {
+const Events = () => {
+
   return (
     <View style={styles.container}>
-      <Text>Splash screen!</Text>
+      <Text>Event list</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -19,3 +20,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default Events;

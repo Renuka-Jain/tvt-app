@@ -3,14 +3,15 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from 'react-native-screens/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
-import HomeScreen from '../screens/Home'
-import DetailsScreen from '../screens/Detail'
-import FavouritesScreen from '../screens/MyFavourites'
-import ProfileScreen from '../screens/Profile'
-import SearchScreen from '../screens/Search'
-import SettingsScreen from '../screens/Settings'
+import HomeScreen from '../screens/home/Home'
+import DetailsScreen from '../screens/home/Detail'
+import FavouritesScreen from '../screens/home/MyFavourites'
+import ProfileScreen from '../screens/home/Profile'
+import SearchScreen from '../screens/home/Search'
+import SettingsScreen from '../screens/home/Settings'
 
 import TabBar from '../components/TabBar'
+import AuthNavigator from './AuthNavigator'
 
 const HomeStackNavigator = createNativeStackNavigator();
 
@@ -19,7 +20,6 @@ const HomeNavigator = () => {
         <HomeStackNavigator.Navigator>
             <HomeStackNavigator.Screen name="Home" component={HomeScreen} />
             <HomeStackNavigator.Screen name="Detail" component={DetailsScreen} />
-
         </HomeStackNavigator.Navigator>
     )
 }
@@ -35,7 +35,6 @@ const TabNavigator = () => {
             <TabBarNavigator.Screen name='Search' component={SearchScreen} />
             <TabBarNavigator.Screen name='Profile' component={ProfileScreen} />
             <TabBarNavigator.Screen name='Settings' component={SettingsScreen} />
-        
         </TabBarNavigator.Navigator>
     )
 }
@@ -43,7 +42,7 @@ const TabNavigator = () => {
 const AppNavigator = () => {
     return(
         <NavigationContainer>
-            <TabNavigator />
+            <AuthNavigator />
         </NavigationContainer>
     )
 }

@@ -1,10 +1,10 @@
 import Recat from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const ProfileScreen = () => {
+const Signup = () => {
     return (
         <View style={styles.container}>
-          <Text>Profile screen!</Text>
+          <Text>Signup screen!</Text>
         </View>
     );
 }
@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default ProfileScreen
+export default Signup

@@ -18,9 +18,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.codewithbeto.tvt-app"
     },
     "android": {
+      "package": "com.codewithbeto.tvt-app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -28,6 +30,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "dd98d2ae-4db9-48e7-8899-a7a5f48a4bbc"
+      }
+    },
+    "owner": "renukajain"
   }
 }
